@@ -24,8 +24,8 @@ const inp1 = document.getElementById('inp1');
 const inp2 = document.getElementById('inp2');
 
 // set event listener on both inputs by using placing inputs into an array and using forEach
-[inp1, inp2].forEach(inp =>
-  inp.addEventListener('change', function(event) {
+[inp1, inp2].forEach((inp) =>
+  inp.addEventListener('change', function (event) {
     incrementByOne(event.target);
   })
 );
@@ -53,7 +53,8 @@ function incrementByOne(input) {
 
 const btn = document
   .getElementsByTagName('button')[0]
-  .addEventListener('click', function(event) {
+  // event handler
+  .addEventListener('click', function (event) {
     console.log(event);
     console.log(event.type);
     console.log(event.target.innerHTML);
